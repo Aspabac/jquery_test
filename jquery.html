@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="jq">あいうえお</div>
+    <div class="jc">why me</div>
+    <div id="a1">11111</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $('body').append('<div>ABC</div>');
+        $('#jq').html('かきくけこ');
+        $('.jc').html('2222222');
+        // $('div').html('aaaaaaaa');
+        const link = '<a href="#">リンク</a>';
+        $('#a1').html(link);
+        $('#a1').css('color','#ff00000');
+        $('#a1').css('background-color','#000000');
+        $('#a1').fadeOut(1000).fadeIn(1000);
+
+        
+    </script>
+</body>
+</html>
